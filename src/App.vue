@@ -9,10 +9,10 @@
         thumbnails
         infinite
       >
-        <q-carousel-slide :name="1" img-src="src/assets/4.jpg" />
-        <q-carousel-slide :name="2" img-src="src/assets/5.jpg" />
-        <q-carousel-slide :name="3" img-src="src/assets/6.jpg" />
-        <q-carousel-slide :name="4" img-src="src/assets/7.jpg" />
+        <q-carousel-slide :name="1" img-src="../src/assets/4.jpg" />
+        <q-carousel-slide :name="2" img-src="../src/assets/5.jpg" />
+        <q-carousel-slide :name="3" img-src="../src/assets/6.jpg" />
+        <q-carousel-slide :name="4" img-src="../src/assets/7.jpg" />
       </q-carousel>
     </div>
 
@@ -103,6 +103,15 @@
 <script>
 import { ref } from 'vue';
 import { Quasar, QCarousel, QCarouselSlide, QCarouselControl } from 'quasar';
+import img1 from './assets/1.jpg';
+import img2 from './assets/2.jpg';
+import img3 from './assets/3.jpg';
+import img4 from './assets/4.jpg';
+import img5 from './assets/5.jpg';
+import img6 from './assets/6.jpg';
+import img7 from './assets/7.jpg';
+import img8 from './assets/8.jpg';
+
 
 export default {
   name: 'App',
@@ -110,9 +119,9 @@ export default {
     stars: ref(4)
     const slide = ref(1);
     const products = ref([
-      { id: 1, name: 'Bata Vale', price: '$29.99', image: 'src/assets/1.jpg' },
-      { id: 2, name: 'Blue Die', price: '$19.99', image: 'src/assets/2.jpg' },
-      { id: 3, name: 'Black Mamba', price: '$39.99', image: 'src/assets/3.jpg' },
+      { id: 1, name: 'Bata Vale', price: '$29.99', image: '../src/assets/1.jpg' },
+      { id: 2, name: 'Blue Die', price: '$19.99', image: '../src/assets/2.jpg' },
+      { id: 3, name: 'Black Mamba', price: '$39.99', image: '../src/assets/3.jpg' },
     ]);
 
     return {
@@ -166,7 +175,7 @@ body {
 }
 
 .hero {
-  background: url('src/assets/8.jpg') no-repeat center center;
+  background: url('../src/assets/8.jpg') no-repeat center center;
   background-size: cover;
   color: #020202;
   padding: 5rem 0;
