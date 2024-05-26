@@ -9,10 +9,10 @@
         thumbnails
         infinite
       >
-        <q-carousel-slide :name="1" img-src="public/images/5.jpg" />
-        <q-carousel-slide :name="2" img-src="public/images/4.jpg" />
-        <q-carousel-slide :name="3" img-src="public/images/6.jpg" />
-        <q-carousel-slide :name="4" img-src="public/images/7.jpg" />
+        <q-carousel-slide :name="1" img-src="src/4.jpg" />
+        <q-carousel-slide :name="2" img-src="src/5.jpg" />
+        <q-carousel-slide :name="3" img-src="src/6.jpg" />
+        <q-carousel-slide :name="4" img-src="src/7.jpg" />
       </q-carousel>
     </div>
 
@@ -110,9 +110,9 @@ export default {
     stars: ref(4)
     const slide = ref(1);
     const products = ref([
-      { id: 1, name: 'Bata Vale', price: '$29.99', image: 'public/images/1.jpg' },
-      { id: 2, name: 'Blue Die', price: '$19.99', image: 'public/images/2.jpg' },
-      { id: 3, name: 'Black Mamba', price: '$39.99', image: 'public/images/3.jpg' },
+      { id: 1, name: 'Bata Vale', price: '$29.99', image: 'src/1.jpg' },
+      { id: 2, name: 'Blue Die', price: '$19.99', image: 'src/2.jpg' },
+      { id: 3, name: 'Black Mamba', price: '$39.99', image: 'src/3.jpg' },
     ]);
 
     return {
@@ -166,7 +166,7 @@ body {
 }
 
 .hero {
-  background: url('public/images/8.jpg') no-repeat center center;
+  background: url('src/8.jpg') no-repeat center center;
   background-size: cover;
   color: #020202;
   padding: 5rem 0;
