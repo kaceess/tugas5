@@ -119,9 +119,9 @@ export default {
     stars: ref(4)
     const slide = ref(1);
     const products = ref([
-      { id: 1, name: 'Bata Vale', price: '$29.99', image: 'src/assets/1.jpg' },
-      { id: 2, name: 'Blue Die', price: '$19.99', image: 'src/assets/2.jpg' },
-      { id: 3, name: 'Black Mamba', price: '$39.99', image: 'src/assets/3.jpg' },
+    { id: 1, name: 'Bata Vale', price: '$29.99', image: 'src/assets/1.jpg' },
+        { id: 2, name: 'Blue Die', price: '$19.99', image: 'src/assets/2.jpg' },
+        { id: 3, name: 'Black Mamba', price: '$39.99', image: 'src/assets/3.jpg' }
     ]);
 
     return {
